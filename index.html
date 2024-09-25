@@ -22,6 +22,7 @@
         <div class="navbar bg-base-100 bg-[#fff3d2]">
           <div class="navbar-start lg:mx-10">
             <button
+              id="btn-blog"
               class="bg-[#B4F461] border px-6 py-2 rounded-lg lg:text-base text-sm font-bold"
             >
               Blog
@@ -40,15 +41,86 @@
           </div>
         </div>
         <div class="flex justify-center items-center space-x-4 mt-10 mb-4">
-          <button id="btn-donate-card" class="border px-6 py-3 rounded-lg btn">
+          <button
+            id="btn-donate-card"
+            class="border px-6 py-3 rounded-lg bg-[#e6e6e6]"
+          >
             Donation
           </button>
-          <button id="btn-history" class="border-2 px-6 py-3 rounded-lg btn">
+          <button
+            id="btn-history"
+            class="border-2 px-6 py-3 rounded-lg bg-[#e6e6e6]"
+          >
             History
           </button>
         </div>
       </nav>
-    </header>  
+    </header>
+    <section id="important-fqa" class="hidden container mx-auto space-y-6">
+      <div class="">
+        <h1 class="text-3xl font-bold">Important FQA</h1>
+      </div>
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              HTML DOM (Document Object Model) is a hierarchical representation
+              of HTML documents. It defines the structure and properties of
+              elements on a webpage, enabling JavaScript to dynamically access,
+              manipulate, and update content, enhancing interactivity and
+              functionality.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Selecting DOM (Document Object Model) elements is a fundamental
+              aspect of web development with JavaScript. It allows developers to
+              interact with and manipulate elements on a webpage dynamically.
+              Proper selection of elements is crucial for tasks such as updating
+              content, adding event listeners, or modifying styles.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM,and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Event delegation refers to the process of using event propagation
+              (bubbling) to handle events at a higher level in the DOM than the
+              element on which the event originated.
+            </p>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Once you have selected DOM elements, you can manipulate them
+                using various JavaScript methods and properties. Changing the
+                Text Content, Html Content,Attribute Value, Style etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <main id="donation-card" class="">
       <section class="container mx-auto mt-4">
         <div
@@ -93,7 +165,7 @@
             <div class="">
               <button
                 id="btn-donate"
-                class="border btn-block btn bg-[#B4F461] lg:mt-5 text-base font-bold"
+                class="btn border btn-block btn bg-[#B4F461] lg:mt-5 text-base font-bold"
               >
                 Donation Now
               </button>
@@ -113,7 +185,7 @@
               class="flex border btn btn-wide space-x-2 mt-4 lg:mt-0 mx-auto lg:mx-0"
             >
               <img src="assets/coin.png" alt="" />
-              <p id="total-balance-two" class="text-[#111111B3]">1000</p>
+              <p id="total-balance2" class="text-[#111111B3]">1000</p>
               <p>BDT</p>
             </div>
             <div class=" ">
@@ -373,12 +445,35 @@
           </div>
         </div>
       </section>
+      <section>
+        <div
+          id="show-modal"
+          class="hidden fixed top-36 lg:right-40 left-6 lg:left-24 lg:max-w-96 mx-auto z-50 border rounded-3xl bg-white py-5 px-4 text-center"
+        >
+          <div class="modal-content">
+            <h2 class="text-2xl md:text-3xl text-[#111] font-bold">
+              Congrates!
+            </h2>
+            <img src="./assets/coin.png" class="mx-auto mt-4 mb-8 w-12" />
+            <p class="text-[#111111d2] text-xl">
+              You Have Donated for Humankind
+            </p>
+            <h3 class="text-xl md:text-2xl text-[#111] font-bold mt-4 mb-8">
+              Successfully
+            </h3>
+            <button
+              class="btn border-gray-400 text-black border-1"
+              id="close-modal"
+            >
+              close confirmation
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-     <section id="history-card" class="hidden">     
-    </section>
+    <section id="history-card" class="hidden"></section>
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/DonateHistory.js"></script>
-
   </body>
 </html>
