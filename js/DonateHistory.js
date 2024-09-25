@@ -7,18 +7,8 @@ document
 document.getElementById("btn-history").addEventListener("click", function () {
   donateCardById("history-card", 2);
 });
-//  Blog Button Toggle ------>
-// const btn = document.getElementById("btn-blog");
-// btn.addEventListener("click", function () {
-//   if (btn.innerText === "Blog") {
-//     btn.innerText = "Home";
-//     donateCardById("important-fqa");
-//   } else {
-//     btn.innerText = "Blog";
-//     window.location.href = "/index.html";
-//   }
-// });
 
+// Blog and Home Button--->
 let isBtn = true;
 document.getElementById("btn-blog").addEventListener("click", function () {
   if (isBtn) {
