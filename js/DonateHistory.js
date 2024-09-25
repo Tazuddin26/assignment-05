@@ -20,13 +20,13 @@ document.getElementById("btn-history").addEventListener("click", function () {
 // });
 
 let isBtn = true;
-document.getElementById('btn-blog').addEventListener('click', function () {
+document.getElementById("btn-blog").addEventListener("click", function () {
   if (isBtn) {
     donateCardById("important-fqa");
-    document.getElementById('btn-blog').innerText = "Home";
+    document.getElementById("btn-blog").innerText = "Home";
   } else {
-    window.location.href = '/index.html';
-     document.getElementById("btn-blog").innerText = "Blog";
+    window.location.href = "index.html";
+    document.getElementById("btn-blog").innerText = "Blog";
   }
   isBtn = !isBtn;
-})
+});
